@@ -22,16 +22,21 @@ public class Main {
                 String[] names = new String[numberPlayers];
                 for(int i = 0;i<numberPlayers;i++){
                     System.out.print("Who is player NO."+String.valueOf(i+1)+": ");
-                    String buffer = scanner.nextLine();
+                    String buffer = scanner.nextLine().trim();
                     if(buffer.isEmpty()) i--;
                     else names[i] = buffer;
                 }
 
                 System.out.print("How many round y'all wanna play?: ");
-                int round = Integer.parseInt(scanner.nextLine());;
+                int round = Integer.parseInt(scanner.nextLine());
+                if(round <= 0){
+                    System.out.println("You need to play at least 1 round");
+                }else{
+                    Mgame mgame = new Mgame(round,names);
+                    mgame.playGame();
+                }
 
-                Mgame mgame = new Mgame(round,names);
-                mgame.playGame();
+
             }
         }catch (InputMismatchException | NumberFormatException e){
             System.out.println("Invalid input. Please enter a valid number.");

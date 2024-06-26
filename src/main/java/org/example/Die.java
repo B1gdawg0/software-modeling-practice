@@ -1,8 +1,11 @@
 package org.example;
 
-import java.util.ArrayList;
-import java.util.Arrays;
 import java.util.Random;
+
+/**
+ * Lerdphipat Kanjanarungroj
+ * 6510450917
+ */
 
 public class Die {
     public int faceValue;

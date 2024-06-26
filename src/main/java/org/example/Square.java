@@ -1,5 +1,10 @@
 package org.example;
 
+/**
+ * Lerdphipat Kanjanarungroj
+ * 6510450917
+ */
+
 public class Square {
     public String name;
     public int index;

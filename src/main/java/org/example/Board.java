@@ -2,6 +2,11 @@ package org.example;
 
 import java.util.ArrayList;
 
+/**
+ * Lerdphipat Kanjanarungroj
+ * 6510450917
+ */
+
 public class Board {
     public ArrayList<Square> squares;
 

@@ -3,6 +3,11 @@ package org.example;
 import java.util.ArrayList;
 import java.util.Arrays;
 
+/**
+ * Lerdphipat Kanjanarungroj
+ * 6510450917
+ */
+
 public class Mgame {
     public int roundCnt;
     public int N;

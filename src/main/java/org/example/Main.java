@@ -1,8 +1,12 @@
 package org.example;
 
-import java.util.ArrayList;
 import java.util.InputMismatchException;
 import java.util.Scanner;
+
+/**
+ * Lerdphipat Kanjanarungroj
+ * 6510450917
+ */
 
 public class Main {
     public static void main(String[] args) {

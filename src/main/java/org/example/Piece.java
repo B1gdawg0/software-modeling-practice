@@ -6,7 +6,7 @@ package org.example;
  */
 
 public class Piece {
-    public  Square square;
+    private Square square;
 
     Piece(Square square){
         this.square = square;

@@ -8,7 +8,7 @@ import java.util.ArrayList;
  */
 
 public class Board {
-    public ArrayList<Square> squares;
+    private ArrayList<Square> squares;
 
     Board(){
         squares = new ArrayList<Square>();
@@ -23,7 +23,7 @@ public class Board {
         return  squares.get(0);
     }
 
-    public void createBoard(){
+    private void createBoard(){
         String[] names = {"A","B","C","D"};
         for(int i = 0;i<4;i++){
             for(int j = 0;j<10;j++) squares.add(new Square(names[i]+String.valueOf(j), i*10+j));

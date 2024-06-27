@@ -6,8 +6,8 @@ package org.example;
  */
 
 public class Square {
-    public String name;
-    public int index;
+    private String name;
+    private int index;
     Square(String name, int index){
         this.name = name;
         this.index = index;

@@ -8,10 +8,10 @@ import java.util.ArrayList;
  */
 
 public class Player {
-    public Board board;
-    public String name;
-    public Piece piece;
-    public ArrayList<Die> dies;
+    private Board board;
+    private String name;
+    private Piece piece;
+    private ArrayList<Die> dies;
 
     Player(String name,ArrayList<Die> dies,Board board){
         this.name = name;
@@ -20,7 +20,7 @@ public class Player {
         piece = new Piece(board.getFristSquare());
     }
 
-    void takeTurn(){
+    public void takeTurn(){
 
         int fvTot = 0;
         for(int i = 1;i<=dies.size();i++){

@@ -8,7 +8,7 @@ import java.util.Random;
  */
 
 public class Die {
-    public int faceValue;
+    private int faceValue;
     Die(){
         roll();
     }

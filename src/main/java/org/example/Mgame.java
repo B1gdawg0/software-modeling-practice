@@ -9,11 +9,11 @@ import java.util.Arrays;
  */
 
 public class Mgame {
-    public int roundCnt;
-    public int N;
-    public ArrayList<Player> players;
-    public Board board;
-    public ArrayList<Die> dies;
+    private int roundCnt;
+    private int N;
+    private ArrayList<Player> players;
+    private Board board;
+    private ArrayList<Die> dies;
 
     Mgame(int N, String[] names){
         this.N = N;
@@ -35,7 +35,7 @@ public class Mgame {
 
     }
 
-    void playRound(){
+    private void playRound(){
         int size = players.size();
         for(int i = 0 ;i<size;i++){
             System.out.println("----------------------------------------------------------------\n");
@@ -45,7 +45,7 @@ public class Mgame {
         }
     }
 
-    void createPlayer(String[] names){
+    private void createPlayer(String[] names){
         for(String name:names){
             players.add(new Player(name,dies, board));
         }
